@@ -1,36 +1,81 @@
+body{ 
+    margin: 0; 
+    background-color: hsl(226, 43%, 10%);
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    font-family: "Rubik";
+}
 .container{ 
     display: grid;
     justify-content: center;
     align-items: center;
-    background-color: hsl(226, 43%, 10%);
+    grid-template-columns: 1fr;
     grid-template-rows: repeat(7, 1fr);
-    grid-row-gap: 50px;
+    grid-row-gap: 20px;
+    box-sizing: border-box;
 }
-.backboard, .infoBackboard{
-    border-radius: 20;
+.grid-item, .infoContainer,.headerInfoContainer, .headerHeadline{
+    border-radius: 10px;
 }
-.headerBackboard{
-    background-color: hsl(235, 46%, 20%);
+.grid-item{
+    display: flex;
+    align-items: flex-end;
+}
+#headerReport{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.headerHeadline, .headerInfoContainer{
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 10%;
+    padding-right: 10%;
+    width: 80%;
+}
+.headerHeadline{
+    background-color: hsl(246, 80%, 60%);
     color: white;
-} 
-.workBackboard{
+}
+.headerInfoContainer{
+    display: flex;
+    background-color: hsl(235, 46%, 20%);
+    justify-content: space-between;
+    margin-top: -20px;
+}
+.headerFields{
+    color:hsl(236, 100%, 87%);
+}
+.headerFields:hover{
+    cursor: pointer;
+    color: white;
+}
+#workContainer{
     background-color: hsl(15, 100%, 70%);
 }
-.studyBackboard{
+#playContainer{ 
+    background-color: hsl(195, 74%, 62%);
+}
+#studyContainer{
     background-color: hsl(348, 100%, 68%);
 }
-.exerciseBackboard{
+#exerciseContainer{
     background-color: hsl(145, 58%, 55%);
 }
-.socialBackboard{
+#socialContainer{
     background-color: hsl(264, 64%, 52%);
 }
-.selfCareBackboard{
+#selfCareContainer{
     background-color: hsl(43, 84%, 65%);
 }
 .infoContainer{
     background-color: hsl(235, 46%, 20%);
     color: white;
     z-index: 2;
-    margin-top: -10px;
+    margin-top: 40px;
+    width: 100%;
+    padding: 10px;
 }
