@@ -13,10 +13,11 @@ body{
   align-items: center;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(7, 1fr);
-  grid-row-gap: 20px;
+  grid-row-gap: 50px;
 }
 .grid-item, .infoContainer,.headerInfoContainer, .headerHeadline{
   border-radius: 10px;
+  border: 1px solid white;
 }
 #headerContainer{
   display: flex;
@@ -79,7 +80,7 @@ body{
   height: auto;
 }
 #workContainer, #playContainer, #studyContainer, #exerciseContainer, #socialContainer, #selfCareContainer{
-  height: inherit;
+  height: 100%;
   width: inherit;
   padding-right: 20px;
 }
@@ -107,13 +108,14 @@ body{
 .infoContainer{
   display: flex;
   flex-direction: column;
+  justify-content: center; 
   background-color: hsl(235, 46%, 20%);
   color: white;
   z-index: 3;
   margin-top: 40px;
   padding: 10px;
   width: 100%;
-  height: 100%;
+  height: 80%;
 }
 .infoContainer:not(:has(#menuElipsis:hover)):hover{
   cursor: pointer;
