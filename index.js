@@ -53,3 +53,5 @@ function setTimeFrame(selectedTimeframe){
     selfCareHours.innerHTML = String(jsonData[5]['timeframes'][selectedTimeframe]['current']).concat("hrs");
     lastSelfCareHours.innerHTML = String(jsonData[5]['timeframes'][selectedTimeframe]['previous']).concat("hrs");
 }
+
+window.addEventListener("load", setTimeFrame('daily'));
