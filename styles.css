@@ -69,6 +69,7 @@ body{
 .headerFields{
   color:hsl(236, 100%, 87%);
   margin-top: 25px;
+  width: 58px;
 }
 .headerFields:hover{
   cursor: pointer;
@@ -162,7 +163,6 @@ body{
 .attribution{
   color: white;
   margin-top: 10px;
-
 }
 
 @media only screen and (min-width: 450px){
@@ -170,6 +170,7 @@ body{
     width: 80vw;
     margin-left: auto;
     margin-right: auto;
+    overflow: hidden;
   }
   #profileImage{
     width: 15%;
@@ -186,9 +187,6 @@ body{
   }
   #headerContainer{
     grid-column: span 2;
-  }
-  .headerFields{
-    margin-left: 12px;
   }
   .sectionBottomContainer{
     display: flex;
@@ -214,14 +212,17 @@ body{
     margin-left: auto;
     margin-right: auto;
     padding: 0px;
-    overflow: hidden;
     justify-content: center;
   }
   .container{
-    grid-template-rows: repeat(2, 220px);
+    grid-template-rows: repeat(2, 250px);
     grid-template-columns: repeat(4, 1fr);
-    grid-column-gap: 25px;
-    grid-row-gap: 25px;
+    grid-column-gap: 45px;
+    grid-row-gap: 45px;
+  }
+  .headerFields{
+    font-size: 18px;
+    text-align: left;
   }
   #headerContainer{
     grid-column: 1;
@@ -234,11 +235,14 @@ body{
     align-items: start;
     justify-content: space-around;
   }
+  #subtitle{
+    font-size: 15px;
+  }
   #profileImage{
-    width: 35%
+    width: 35%;
   }
   #profileName{
-    font-size: 32px;
+    font-size: 40px;
     white-space: normal;
   }
   .profileText{
@@ -261,10 +265,14 @@ body{
     padding-top: 10%;;
   }
   .trackingHrs{
-    margin-bottom: 2px;
+    margin-bottom: 5pcpx;
     font-size: 50px;
   }
   .sectionTitle{
     font-size: 17px;
+  }
+  .lastTimeframeHours, #lastWeekHrsField{
+    font-weight: 400;
+    font-size: 16px;
   }
 }
