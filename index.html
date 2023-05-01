@@ -23,9 +23,9 @@
         </div>
       </div>
       <div class="headerInfoContainer">
-        <a class="headerFields">Daily</a>
-        <a class="headerFields">Weekly</a>
-        <a class="headerFields">Monthly</a>
+        <a class="headerFields" onclick="setTimeFrame('daily')">Daily</a>
+        <a class="headerFields" onclick="setTimeFrame('weekly')">Weekly</a>
+        <a class="headerFields" onclick="setTimeFrame('monthly')">Monthly</a>
       </div>
     </div>
     <div class="grid-item" id="workContainer">
@@ -38,8 +38,8 @@
         <div class="sectionBottomContainer"> 
           <p class="trackingHrs" id="workHrs">32hrs</p>
           <div class="lastWeekHrsContainer">
-            <span class="lastWeekHrs">Last Week - </span>
-            <span class="lastWeekHrs" id="workLastWeekHrsField">36hrs</span>
+            <span class="lastTimeframeHours">Last Week - </span>
+            <span class="lastTimeframeHours" id="workLastWeekHrsField">36hrs</span>
           </div>
         </div>
       </div> 
@@ -54,8 +54,8 @@
         <div class="sectionBottomContainer"> 
           <p class="trackingHrs" id="playHrs">32hrs</p>
           <div class="lastWeekHrsContainer">
-            <span class="lastWeekHrs">Last Week - </span>
-            <span class="lastWeekHrs" id="playLastWeekHrsField">36hrs</span>
+            <span class="lastTimeframeHours">Last Week - </span>
+            <span class="lastTimeframeHours" id="playLastWeekHrsField">36hrs</span>
           </div>
         </div>
       </div>
@@ -70,8 +70,8 @@
         <div class="sectionBottomContainer"> 
           <p class="trackingHrs" id="studyHrs">32hrs</p>
           <div class="lastWeekHrsContainer">
-            <span class="lastWeekHrs">Last Week - </span>
-            <span class="lastWeekHrs" id="studyLastWeekHrsField">36hrs</span>
+            <span class="lastTimeframeHours">Last Week - </span>
+            <span class="lastTimeframeHours" id="studyLastWeekHrsField">36hrs</span>
           </div>
         </div>
       </div>
@@ -86,8 +86,8 @@
         <div class="sectionBottomContainer"> 
           <p class="trackingHrs" id="exerciseHrs">32hrs</p>
           <div class="lastWeekHrsContainer">
-            <span class="lastWeekHrs">Last Week - </span>
-            <span class="lastWeekHrs" id="exerciseLastWeekHrsField">36hrs</span>
+            <span class="lastTimeframeHours">Last Week - </span>
+            <span class="lastTimeframeHours" id="exerciseLastWeekHrsField">36hrs</span>
           </div>
         </div>
       </div>
@@ -102,8 +102,8 @@
         <div class="sectionBottomContainer"> 
           <p class="trackingHrs" id="socialHrs">32hrs</p>
           <div class="lastWeekHrsContainer">
-            <span class="lastWeekHrs">Last Week - </span>
-            <span class="lastWeekHrs" id="socialLastWeekHrsField">36hrs</span>
+            <span class="lastTimeframeHours">Last Week - </span>
+            <span class="lastTimeframeHours" id="socialLastWeekHrsField">36hrs</span>
           </div>
         </div>
       </div>
@@ -118,16 +118,17 @@
           <div class="sectionBottomContainer"> 
             <p class="trackingHrs" id="selfCareHrs">32hrs</p>
             <div class="lastWeekHrsContainer">
-              <span class="lastWeekHrs">Last Week - </span>
-              <span class="lastWeekHrs" id="selfCareLastWeekHrsField">36hrs</span>
+              <span class="lastTimeframeHours">Last Week - </span>
+              <span class="lastTimeframeHours" id="selfCareLastWeekHrsField">36hrs</span>
             </div>
           </div>
       </div>
     </div>
   </main>
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Challenge by <a style="color:hsl(236, 100%, 87%)" href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a style="color:hsl(236, 100%, 87%)" href="#">Liam Hebblewhite</a>.
   </div>
+  <script src="./index.js"></script>
 </body>
 </html>
