@@ -239,6 +239,7 @@ body{
     font-size: 15px;
   }
   #profileImage{
+    margin-top: 10px;
     width: 35%;
   }
   #profileName{
@@ -259,17 +260,22 @@ body{
   .infoContainer{
     padding-left: 5%;
     padding-right: 5%;
+    padding-top: 5%;
+    padding-bottom: 5%;
     justify-content: space-around;
   }
   .sectionTopContainer{
-    padding-top: 10%;;
+    padding-top: 5%;
+  }
+  .sectionBottomContainer{
+    padding-top: 0%;
   }
   .trackingHrs{
-    margin-bottom: 5pcpx;
+    margin-bottom: 5px;
     font-size: 50px;
   }
   .sectionTitle{
-    font-size: 17px;
+    font-size: 18px;
   }
   .lastTimeframeHours, #lastWeekHrsField{
     font-weight: 400;
