@@ -1,5 +1,5 @@
 body{ 
-  margin: 0; 
+  margin: 0;
   background-color: hsl(226, 43%, 10%);
   padding-left: 5%;
   padding-right: 5%;
@@ -12,11 +12,11 @@ body{
   justify-content: center;
   align-items: center;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(7, 1fr);
-  grid-row-gap: 50px;
+  grid-template-rows: repeat(7, 175px);
+  grid-row-gap: 25px;
 }
 .grid-item, .infoContainer,.headerInfoContainer, .headerHeadline{
-  border-radius: 10px;
+  border-radius: 15px;
 }
 #headerContainer{
   display: flex;
@@ -79,15 +79,17 @@ body{
   height: auto;
 }
 #workContainer, #playContainer, #studyContainer, #exerciseContainer, #socialContainer, #selfCareContainer{
+  display: flex;
+  flex-direction: column;
   height: 100%;
   width: inherit;
-  padding-right: 20px;
 }
 #workContainer{
   background-color: hsl(15, 100%, 70%);
 }
 #workImage, #playImage, #studyImage, #exerciseImage, #socialImage, #selfCareImage{
-  float: right;
+  align-self: self-end;
+  padding-right: 20px; 
 }
 #playContainer{ 
   background-color: hsl(195, 74%, 62%);
@@ -107,14 +109,12 @@ body{
 .infoContainer{
   display: flex;
   flex-direction: column;
-  justify-content: center; 
+  justify-content: center;
   background-color: hsl(235, 46%, 20%);
   color: white;
   z-index: 3;
-  margin-top: 40px;
-  padding: 10px;
-  width: 100%;
-  height: 70%;
+  padding: 2%;
+  flex-grow: 1;
 }
 .infoContainer:not(:has(#menuElipsis:hover)):hover{
   cursor: pointer;
@@ -136,17 +136,21 @@ body{
   padding-top: 2px;
   padding-bottom: 10px;
 }
+#menuElipsis{
+  padding: 2%;
+}
 #menuElipsis:hover{
   filter: brightness(200%);
   cursor: pointer;
 }
 .sectionTitle{
   margin: 0px;
+  font-size: 15px;
 }
 .trackingHrs{
   margin: 0px;
-  font-weight: 300;
-  font-size: 25px;
+  font-weight: 100;
+  font-size: 27px;
 }
 .lastWeekHrs, #lastWeekHrsField{
   color: hsl(236, 100%, 87%); 
@@ -155,4 +159,66 @@ body{
 }
 .attribution{
   color: white;
+}
+
+@media screen and (min-width: 976px){
+  body{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    padding: 0px;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+  }
+  .container{
+    grid-template-rows: repeat(2, 220px);
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 25px;
+    grid-row-gap: 25px;
+  }
+  #headerContainer{
+    grid-row: span 2;
+  }
+  .headerHeadline{
+    flex-direction: column;
+    flex: 3.2;
+    align-items: start;
+    justify-content: space-around;
+  }
+  #profileImage{
+    width: 35%
+  }
+  #profileName{
+    font-size: 32px;
+  }
+  .profileText{
+    margin-bottom: 40px;
+    padding-left: 0px;
+  }
+  .headerInfoContainer{
+    flex-direction: column;
+    flex: 1;
+    padding-top: 12%;
+    padding-bottom: 12%;
+  }
+  .infoContainer{
+    padding-left: 5%;
+    padding-right: 5%;
+    justify-content: space-around;
+  }
+  .sectionTopContainer{
+    padding-top: 10%;;
+  }
+  .sectionBottomContainer{ 
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    align-items: start;
+    padding-bottom: 10%;
+  }
+  .trackingHrs{
+    margin-bottom: 2px;
+    font-size: 50px;
+  }
 }
