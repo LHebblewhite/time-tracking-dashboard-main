@@ -63,11 +63,12 @@ body{
   background-color: hsl(235, 46%, 20%);
   justify-content: space-between;
   align-items: center;
-  margin-top: -10px;
-  flex: 1;
+  margin-top: -25px;
+  flex: 1.2;
 }
 .headerFields{
   color:hsl(236, 100%, 87%);
+  margin-top: 25px;
 }
 .headerFields:hover{
   cursor: pointer;
@@ -153,7 +154,7 @@ body{
   font-weight: 100;
   font-size: 27px;
 }
-.lastWeekHrs, #lastWeekHrsField{
+.lastTimeframeHours, #lastWeekHrsField{
   color: hsl(236, 100%, 87%); 
   font-weight: 400;
   font-size: 13px;
@@ -164,11 +165,47 @@ body{
 
 }
 
-/* @media screen and (min-width: 768px){
-  
-} */
+@media only screen and (min-width: 450px){
+  body{
+    width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #profileImage{
+    width: 15%;
+  }
+  #profileName{
+    font-size: 25px;
+    white-space: normal;
+  }
+  .container{
+    grid-template-rows: repeat(4, 200px);
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 25px;
+    grid-row-gap: 25px;
+  }
+  #headerContainer{
+    grid-column: span 2;
+  }
+  .headerFields{
+    margin-left: 12px;
+  }
+  .sectionBottomContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+  .trackingHrs{
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-size: 40px;
+  }
+  .sectionTitle{
+    font-size: 17px;
+  }
+}
 
-@media screen and (min-width: 976px){
+@media only screen and (min-width: 960px){
   body{
     display: flex;
     flex-direction: column;
@@ -187,6 +224,7 @@ body{
     grid-row-gap: 25px;
   }
   #headerContainer{
+    grid-column: 1;
     grid-row: span 2;
     height: 100%;
   }
@@ -221,13 +259,6 @@ body{
   }
   .sectionTopContainer{
     padding-top: 10%;;
-  }
-  .sectionBottomContainer{ 
-    display: flex;
-    flex-direction: column;
-    margin-top: 10px;
-    align-items: start;
-    padding-bottom: 10%;
   }
   .trackingHrs{
     margin-bottom: 2px;
