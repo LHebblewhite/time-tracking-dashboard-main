@@ -52,6 +52,4 @@ function setTimeFrame(selectedTimeframe){
     lastSocialHours.innerHTML = String(jsonData[4]['timeframes'][selectedTimeframe]['previous']).concat("hrs");
     selfCareHours.innerHTML = String(jsonData[5]['timeframes'][selectedTimeframe]['current']).concat("hrs");
     lastSelfCareHours.innerHTML = String(jsonData[5]['timeframes'][selectedTimeframe]['previous']).concat("hrs");
-    
-
 }
