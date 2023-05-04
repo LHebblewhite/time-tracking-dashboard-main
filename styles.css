@@ -71,6 +71,9 @@ body{
   margin-top: 25px;
   width: 58px;
 }
+#weeklyHeader{
+  color: white;
+}
 .headerFields:hover{
   cursor: pointer;
   color: white;

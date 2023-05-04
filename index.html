@@ -13,7 +13,6 @@
   <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-  <script src="./index.js"></script>
   <main class="container">
     <div class="grid-item" id="headerContainer">
       <div class="headerHeadline">
@@ -24,9 +23,9 @@
         </div>
       </div>
       <div class="headerInfoContainer">
-        <a class="headerFields" onclick="setTimeFrame('daily')">Daily</a>
-        <a class="headerFields" onclick="setTimeFrame('weekly')">Weekly</a>
-        <a class="headerFields" onclick="setTimeFrame('monthly')">Monthly</a>
+        <a class="headerFields" id="dailyHeader" onclick="setTimeFrame('daily')">Daily</a>
+        <a class="headerFields" id="weeklyHeader" onclick="setTimeFrame('weekly')">Weekly</a>
+        <a class="headerFields" id="monthlyHeader" onclick="setTimeFrame('monthly')">Monthly</a>
       </div>
     </div>
     <div class="grid-item" id="workContainer">
@@ -53,10 +52,10 @@
           <svg id="menuElipsis" viewbox="0 0 21 5" width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
         </div> 
         <div class="sectionBottomContainer"> 
-          <p class="trackingHrs" id="playHrs">32hrs</p>
+          <p class="trackingHrs" id="playHrs">10hrs</p>
           <div class="lastWeekHrsContainer">
             <span class="lastTimeframeHours">Last Week - </span>
-            <span class="lastTimeframeHours" id="playLastWeekHrsField">36hrs</span>
+            <span class="lastTimeframeHours" id="playLastWeekHrsField">8hrs</span>
           </div>
         </div>
       </div>
@@ -69,10 +68,10 @@
           <svg id="menuElipsis" viewbox="0 0 21 5" width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
         </div> 
         <div class="sectionBottomContainer"> 
-          <p class="trackingHrs" id="studyHrs">32hrs</p>
+          <p class="trackingHrs" id="studyHrs">4hrs</p>
           <div class="lastWeekHrsContainer">
             <span class="lastTimeframeHours">Last Week - </span>
-            <span class="lastTimeframeHours" id="studyLastWeekHrsField">36hrs</span>
+            <span class="lastTimeframeHours" id="studyLastWeekHrsField">7hrs</span>
           </div>
         </div>
       </div>
@@ -85,10 +84,10 @@
           <svg id="menuElipsis" viewbox="0 0 21 5" width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
         </div> 
         <div class="sectionBottomContainer"> 
-          <p class="trackingHrs" id="exerciseHrs">32hrs</p>
+          <p class="trackingHrs" id="exerciseHrs">4hrs</p>
           <div class="lastWeekHrsContainer">
             <span class="lastTimeframeHours">Last Week - </span>
-            <span class="lastTimeframeHours" id="exerciseLastWeekHrsField">36hrs</span>
+            <span class="lastTimeframeHours" id="exerciseLastWeekHrsField">5hrs</span>
           </div>
         </div>
       </div>
@@ -101,10 +100,10 @@
           <svg id="menuElipsis" viewbox="0 0 21 5" width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
         </div> 
         <div class="sectionBottomContainer"> 
-          <p class="trackingHrs" id="socialHrs">32hrs</p>
+          <p class="trackingHrs" id="socialHrs">5hrs</p>
           <div class="lastWeekHrsContainer">
             <span class="lastTimeframeHours">Last Week - </span>
-            <span class="lastTimeframeHours" id="socialLastWeekHrsField">36hrs</span>
+            <span class="lastTimeframeHours" id="socialLastWeekHrsField">10hrs</span>
           </div>
         </div>
       </div>
@@ -117,10 +116,10 @@
             <svg id="menuElipsis" viewbox="0 0 21 5" width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
           </div> 
           <div class="sectionBottomContainer"> 
-            <p class="trackingHrs" id="selfCareHrs">32hrs</p>
+            <p class="trackingHrs" id="selfCareHrs">2hrs</p>
             <div class="lastWeekHrsContainer">
               <span class="lastTimeframeHours">Last Week - </span>
-              <span class="lastTimeframeHours" id="selfCareLastWeekHrsField">36hrs</span>
+              <span class="lastTimeframeHours" id="selfCareLastWeekHrsField">2hrs</span>
             </div>
           </div>
       </div>
@@ -130,5 +129,6 @@
     Challenge by <a style="color:hsl(236, 100%, 87%)" href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a style="color:hsl(236, 100%, 87%)" href="#">Liam Hebblewhite</a>.
   </div>
+  <script src="./index.js"></script>
 </body>
 </html>
